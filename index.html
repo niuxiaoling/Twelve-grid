@@ -1,0 +1,94 @@
+<!--实际像素 1080 * 1920-->
+<!--逻辑像素 375 * 667-->
+<!------------------------------------------->
+<!-- 手机浏览器   -->
+<!-- viewport视口   980px-->
+
+<!-- 移动端开发首先  换掉视口大小 -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 100px;
+        }
+
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: calc(100px * 360 / 750);
+            }
+        }
+
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: calc(100px * 414 / 750);
+            }
+        }
+
+        #left {
+            width: 0.48rem;
+            height: 0.48rem;
+            background: red;
+        }
+
+        #right {
+            width: 3.4rem;
+            height: 0.7rem;
+        }
+
+        /*#left {*/
+        /*display: block;*/
+        /*width: calc(48px * 375 / 750);*/
+        /*height: calc(48px * 375 / 750);*/
+        /*background: blue;*/
+        /*}*/
+
+        /*#right {*/
+        /*width: calc(340px * 375 / 750);*/
+        /*height: calc(70px * 375 / 750);*/
+        /*background: red;*/
+        /*}*/
+
+        /*@media screen and (min-width: 360px) {*/
+        /*#left {*/
+        /*width: calc(48px * 360 / 750);*/
+        /*height: calc(48px * 360 / 750);*/
+        /*}*/
+
+        /*#right {*/
+        /*width: calc(340px * 360 / 750);*/
+        /*height: calc(70px * 360 / 750);*/
+        /*}*/
+        /*}*/
+
+        /*@media screen and (min-width: 414px) {*/
+        /*#left {*/
+        /*width: calc(48px * 414 / 750);*/
+        /*height: calc(48px * 414 / 750);*/
+        /*}*/
+
+        /*#right {*/
+        /*width: calc(340px * 414 / 750);*/
+        /*height: calc(70px * 414 / 750);*/
+        /*}*/
+
+        /*}*/
+
+    </style>
+</head>
+<body>
+<div id="left"></div>
+<div id="right"></div>
+
+</body>
+</html>
